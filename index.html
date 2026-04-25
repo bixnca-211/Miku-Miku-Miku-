@@ -1,134 +1,216 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Hatsune Miku</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<head>
+<title>Hatsune Miku</title>
+
+<!-- Bootstrap 3 (Carousel works here) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+section{
+    padding:30px;
+}
+img{
+    width:300px;
+}
+.carousel-inner .item{
+    padding:20px;
+}
+.carousel-inner iframe{
+    margin:auto;
+}
+</style>
+
 </head>
+
 <body>
-  <nav class="navbar bg-light">
-  <div class="container-fluid">
-    <a classs="navbar-brand" href="#">Hatsune Miku</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutMiku">about hatsune miku</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skillsandachievements">skills & achievements</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#songs">songs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#footer">footer</a>
-      </li>
-    </ul>
-  </div>
-  </div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Hatsune Miku</a>
+</div>
+
+<ul class="nav navbar-nav">
+<li><a href="#aboutmiku">about hatsune miku</a></li>
+<li><a href="#skillsandachievements">skills & achievements</a></li>
+<li><a href="#songs">songs</a></li>
+<li><a href="#footer">footer</a></li>
+</ul>
+</div>
 </nav>
-  <h1>Hatsune Miku: Virtual Pop Diva!</h1>
-  <img src="895209df3907a36efbe709a7b10462ec.jpg.webp">
-  <section id="aboutmiku">
+
+<h1>Hatsune Miku: Virtual Pop Diva!</h1>
+
+<img src="895209df3907a36efbe709a7b10462ec.jpg.webp">
+
+<!-- ABOUT -->
+<section id="aboutmiku">
 Hatsune Miku, codenamed CV01, is a virtual singer and one of the most recognizable digital characters in the world! SHe was released in 2007 by the Japanese company Crypton Future Media as a voicebank for the singing synthesis software Vocaloid! 
-   
-    Her voice was created using recordings of Japanese voice actress Saki Fujita. Producers can use the software to type lyrics and melodies, and Miku will sing them! Because of this, thousands of musicians around the world have used her voice to create original songs in many different genres!
 
-    Miku is often depicted as a 16 year old girl with long turquoise twin tails, futuristic clothing and a digital idol aesthetic!
-  </section>
-  <section id="skillsandachievements">
- <h3>Skills</h3>
+Her voice was created using recordings of Japanese voice actress Saki Fujita. Producers can use the software to type lyrics and melodies, and Miku will sing them! Because of this, thousands of musicians around the world have used her voice to create original songs in many different genres!
+
+Miku is often depicted as a 16 year old girl with long turquoise twin tails, futuristic clothing and a digital idol aesthetic!
+</section>
+
+<!-- SKILLS -->
+<section id="skillsandachievements">
+
+<h3>Skills</h3>
+
 Anybody can create songs using her voice! Therefore she can sing in many different styles like pop, rock, electronic and more. She can also sing in many different languages! Primarily Japanese but has also been adapted to sing in English and Chinese, making her music global!
-Since anyone can make songs with her voice, Miku has performed thousands of unique songs written by different producers worldwide! 
- <h3>Achievements</h3>
-  Miku's impact goes far beyond music software, she's become a worldwide culturall icon!! Songs featuring Miku have gained hundreds of millions of views online, showing her huge global fanbase!
 
-  She has performed sold out shows across North America, Eurpoe and Asia!
+Since anyone can make songs with her voice, Miku has performed thousands of unique songs written by different producers worldwide!
 
-  Albums featuring her voice have ranked on major music charts, including Japan's Oricon charts!
+<h3>Achievements</h3>
 
-  She stars in popular SEGA rhythm game series, Hatsune Miku: Project DIVA and HATSUNE MIKU: COLORFUL STAGE!
+Miku's impact goes far beyond music software, she's become a worldwide culturall icon!!
 
-  Miku has collaborated with global companies and even appeared in live performances with artists like Lady Gaga!
- 
-  </section>
-  
-   <section id="songs">
-     <div class="container">
-       <h2>songs</h2>
-       <div id="mikuCarousel" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-           <li data-target="mikuCarousel" data-slide-to="0" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="1" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="2" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="3" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="4" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="5" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="6" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="7" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="8" class="active"></li>
-           <li data-target="mikuCarousel" data-slide-to="9" class="active"></li>
-         </ol>
-         <div class="carousel-inner">
-           <div class="item active">
-             <iframe something maybe>
-           <div></div>
-         </div>
-       </div>
-     </div>
-    <h2>10 of Miku's most popular songs(in no particular order)include:</h2> 
-     
-     <h4>1. Senbonzakaru (KuroUsa(WhiteFlame))
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/Mqps4anhz0Q?si=aFp-lC7vMKCNbnT2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       2. World is Mine (ryo/supercell)
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4kEPbLbPvV4?si=l2AFUwrjjE6VOVH2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       3. Tell Your World (kz/livetune)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/fmrA-gxJxgQ?si=BMJBhIN1vwagMpnF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       4. Mesmerizer (Satsuki)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/19y8YTbvri8?si=2_6ZGi4liSAsqdb3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       5. Miku (Anamanaguchi)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/NocXEwsJGOQ?si=PC4CYcPs2glBzIJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       6. Rolling Girl (wowaka)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/vPlFkyXY6L0?si=u1zKpyyTocJiDOTa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-       7. Ievan Polkka (Finnish Traditional/Otomania)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/widZEAJc0QM?si=urnkWtw-rHBQ5gYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       8. Aishte, Aishte, Aishte (Kikuo)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/NTrm_idbhUk?si=U9I-AQKzAORPDOHt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       9. Popipo (LamazeP)
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/TNf3GPizM58?si=qGTwW8EdvtgT0kQn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     
-       10: The Disappearance of Hatsune Miku (cosMo@bousouP)</h4>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/5qkTpJAhywg?si=wSX95pCIgLBcn2hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   
-   </section>
-   <section id="footer">
-     <h2>other information!</h2>
-MIKU EXPO INFO: <a href="https://mikuexpo.com">HATSUNE MIKU EXPO 2026 website link</a>
-HATSUNE MIKU: COLOFUL STAGE OFFICIAL website: <a href="https://colorfulstage.com">HATSUNE MIKU: COLORFUL STAGE website link</a>
-HATSUNE MIKU: Project DIVA OFFICIAL website: <a href="https://miku.sega.com/megamixplus/index.html">HATSUNE MIKU: Project DIVA website link</a>
-Hatsune Miku buisness inquiries: <a href="https://www.crypton.co.jp/cfm/inquiry-aboutus_en">Hatsune Miku buiness info</a>
-Hatsune Miku OFFICIAL website: <a href="https://piapro.net/intl/en.html">Hatsune Miku OFFICIAL website</a>
+Songs featuring Miku have gained hundreds of millions of views online, showing her huge global fanbase!
 
-     <h3>social media!</h3>
-youtube: <a href="https://www.youtube.com/user/HatsuneMiku/featured">Hatsune Miku Youtube channel link</a>
-facebook: <a href="https://www.facebook.com/HatsuneMikuOfficialPage/">Hatsune Miku Facebook page link</a>
-instagram: <a href="https://www.instagram.com/cfm_mikustagram/">Hatsune Miku Instagram page</a>
-X: <a href="https://x.com/cfm_miku_en">Hatsune Miku X account</a>
-   </section>
+She has performed sold out shows across North America, Eurpoe and Asia!
+
+Albums featuring her voice have ranked on major music charts, including Japan's Oricon charts!
+
+She stars in popular SEGA rhythm game series, Hatsune Miku: Project DIVA and HATSUNE MIKU: COLORFUL STAGE!
+
+Miku has collaborated with global companies and even appeared in live performances with artists like Lady Gaga!
+
+</section>
+
+<!-- SONGS -->
+<section id="songs">
+
+<div class="container">
+<h2>songs</h2>
+
+<div id="mikuCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#mikuCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#mikuCarousel" data-slide-to="1"></li>
+<li data-target="#mikuCarousel" data-slide-to="2"></li>
+<li data-target="#mikuCarousel" data-slide-to="3"></li>
+<li data-target="#mikuCarousel" data-slide-to="4"></li>
+<li data-target="#mikuCarousel" data-slide-to="5"></li>
+<li data-target="#mikuCarousel" data-slide-to="6"></li>
+<li data-target="#mikuCarousel" data-slide-to="7"></li>
+<li data-target="#mikuCarousel" data-slide-to="8"></li>
+<li data-target="#mikuCarousel" data-slide-to="9"></li>
+</ol>
+
+<!-- Slides -->
+<div class="carousel-inner">
+
+<div class="item active">
+<h4>1. Senbonzakaru (KuroUsa(WhiteFlame))</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mqps4anhz0Q" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>2. World is Mine (ryo/supercell)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4kEPbLbPvV4" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>3. Tell Your World (kz/livetune)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fmrA-gxJxgQ" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>4. Mesmerizer (Satsuki)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/19y8YTbvri8" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>5. Miku (Anamanaguchi)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NocXEwsJGOQ" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>6. Rolling Girl (wowaka)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vPlFkyXY6L0" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>7. Ievan Polkka (Finnish Traditional/Otomania)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/widZEAJc0QM" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>8. Aishte, Aishte, Aishte (Kikuo)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NTrm_idbhUk" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>9. Popipo (LamazeP)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TNf3GPizM58" allowfullscreen></iframe>
+</div>
+
+<div class="item">
+<h4>10. The Disappearance of Hatsune Miku (cosMo@bousouP)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5qkTpJAhywg" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#mikuCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+
+<a class="right carousel-control" href="#mikuCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<section id="footer">
+
+<h2>other information!</h2>
+
+MIKU EXPO INFO:
+<a href="https://mikuexpo.com">HATSUNE MIKU EXPO 2026 website link</a><br>
+
+HATSUNE MIKU: COLOFUL STAGE OFFICIAL website:
+<a href="https://colorfulstage.com">HATSUNE MIKU: COLORFUL STAGE website link</a><br>
+
+HATSUNE MIKU: Project DIVA OFFICIAL website:
+<a href="https://miku.sega.com/megamixplus/index.html">HATSUNE MIKU: Project DIVA website link</a><br>
+
+Hatsune Miku business inquiries:
+<a href="https://www.crypton.co.jp/cfm/inquiry-aboutus_en">Hatsune Miku business info</a><br>
+
+Hatsune Miku OFFICIAL website:
+<a href="https://piapro.net/intl/en.html">Hatsune Miku OFFICIAL website</a>
+
+<h3>social media!</h3>
+
+youtube:
+<a href="https://www.youtube.com/user/HatsuneMiku/featured">Hatsune Miku Youtube channel link</a><br>
+
+facebook:
+<a href="https://www.facebook.com/HatsuneMikuOfficialPage/">Hatsune Miku Facebook page link</a><br>
+
+instagram:
+<a href="https://www.instagram.com/cfm_mikustagram/">Hatsune Miku Instagram page</a><br>
+
+X:
+<a href="https://x.com/cfm_miku_en">Hatsune Miku X account</a>
+
+</section>
+
 </body>
-
-
 </html>
